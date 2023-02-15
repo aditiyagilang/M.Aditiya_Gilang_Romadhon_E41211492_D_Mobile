@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".customize">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/material_dynamic_primary60"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@android:color/background_light"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="36dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViews2"
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="200dp"
+
+            android:layout_marginBottom="200dp"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="@color/material_dynamic_primary60"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="20dp"
+
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="40dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="438dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="125dp"
+                    android:layout_height="123dp"
+
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/logo" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginHorizontal="28dp"
+                    android:layout_marginBottom="36dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/textInputPassword"
+                    tools:layout_editor_absoluteX="25dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginHorizontal="28dp"
+                    android:layout_marginBottom="100dp"
+                    android:hint="Password"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/textInputLayout3"-->
+                <!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--                    android:layout_width="300dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="8dp"-->
+                <!--                    android:layout_marginBottom="16dp"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout"-->
+                <!--                    app:passwordToggleTint="@color/teal_200" />-->
+
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/textInputLayout"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Password"-->
+                <!--                    android:inputType="textPassword"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    tools:layout_editor_absoluteY="277dp" />-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--<androidx.cardview.widget.CardView/>-->
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:layout_width="320dp"-->
+    <!--    android:layout_height="320dp"-->
+    <!--    -->
+    <!--    />-->

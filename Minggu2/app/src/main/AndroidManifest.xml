@@ -12,8 +12,7 @@
         android:theme="@style/Theme.Minggu2"
         tools:targetApi="31">
         <activity
-            android:name=".customize"
-            android:label="Constrain Layout"
+            android:name=".mainmenu"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,18 +21,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".relativelayout"
+            android:name=".horizontalscrooll"
             android:exported="false" />
         <activity
-            android:name=".customsize"
+            android:name=".vertikalscroll"
+            android:exported="false" />
+        <activity
+            android:name=".materiandesign"
+            android:exported="false" />
+        <activity
+            android:name=".tabellayout"
+            android:exported="false" />
+        <activity
+            android:name=".framelayout"
+            android:exported="false" />
+        <activity
+            android:name=".customize"
+            android:exported="false"
+            android:label="Constrain Layout">
+
+        </activity>
+        <activity
+            android:name=".relativelayout"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Minggu2.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.Minggu2.NoActionBar" />
     </application>
 
 </manifest>

@@ -48,14 +48,15 @@
             android:id="@+id/cardViews2"
             android:layout_width="320dp"
             android:layout_height="400dp"
-            android:layout_marginLeft="56dp"
+            android:layout_marginLeft="156dp"
             android:layout_marginTop="200dp"
 
             android:layout_marginBottom="200dp"
+
             android:foregroundGravity="center"
             app:cardBackgroundColor="@color/material_dynamic_primary60"
-            app:cardCornerRadius="15dp"
-            app:cardMaxElevation="20dp"
+            app:cardCornerRadius="25dp"
+            app:cardMaxElevation="210dp"
 
 
             tools:ignore="MissingConstraints"
@@ -63,7 +64,7 @@
             tools:layout_editor_absoluteY="40dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+                android:layout_width="318dp"
                 android:layout_height="438dp"
                 android:layout_gravity="center"
                 android:foregroundGravity="center">

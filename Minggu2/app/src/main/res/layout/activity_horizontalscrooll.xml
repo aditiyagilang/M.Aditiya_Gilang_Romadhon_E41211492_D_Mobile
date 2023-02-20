@@ -10,6 +10,25 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_marginTop="150dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginscreen"
+            android:layout_marginTop="80dp"
+            android:text="ScrollView"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_gravity="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fstText"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome to Mobile"
+            android:layout_gravity="center"></TextView>
         <Button
             android:layout_marginLeft="15dp"
             android:layout_width="wrap_content"

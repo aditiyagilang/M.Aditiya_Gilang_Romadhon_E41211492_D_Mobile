@@ -38,11 +38,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp"
         app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="36dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViews2"
@@ -64,7 +67,7 @@
             tools:layout_editor_absoluteY="40dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="318dp"
+                android:layout_width="320dp"
                 android:layout_height="438dp"
                 android:layout_gravity="center"
                 android:foregroundGravity="center">

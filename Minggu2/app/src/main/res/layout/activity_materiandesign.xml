@@ -18,6 +18,7 @@
         android:text="Text Button"
         android:textAllCaps="false"
         android:textSize="24dp"
+        android:onClick="menu"
         android:textColor="@color/colorAccent"
         android:background="@color/colorPrimaryDark"
         app:layout_constraintBaseline_toTopOf="parent"

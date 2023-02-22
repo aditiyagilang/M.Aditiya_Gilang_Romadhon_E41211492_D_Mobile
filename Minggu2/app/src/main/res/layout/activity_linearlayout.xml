@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Massage"
         style="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
-        android:textColor="@color/black"
+        android:textColor="@color/colorAccent"
         android:textStyle="bold"
         android:textSize="24dp"
         android:layout_marginTop="20dp"

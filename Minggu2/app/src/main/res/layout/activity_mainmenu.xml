@@ -228,7 +228,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Material Layout"
+            android:text="Frame"
             android:textSize="12dp"></TextView>
 
         <TextView
@@ -242,7 +242,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Material Layout"
+            android:text="Text Button"
             android:textSize="12dp"></TextView>
 
     </TableRow>

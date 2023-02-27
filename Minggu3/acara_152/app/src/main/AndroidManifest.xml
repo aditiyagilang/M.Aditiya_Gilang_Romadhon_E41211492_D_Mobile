@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Acara_15"
         tools:targetApi="31">
         <activity
+            android:name=".card_layout"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

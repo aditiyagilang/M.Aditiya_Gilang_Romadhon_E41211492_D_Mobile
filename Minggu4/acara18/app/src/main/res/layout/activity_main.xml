@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    android:gravity="center">
 
-    <TextView
+    <Button
+        android:id="@+id/firstfragment"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="250dp"
+        android:layout_toEndOf="@+id/secundfragment"
+        android:backgroundTint="@color/custom"
+        android:text="Fisrst Fragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </Button>
+    <Button
+        android:id="@+id/secundfragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secound Fragment"
+android:layout_marginRight="20dp"
+        android:backgroundTint="@color/custom"
+        >
+
+    </Button>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

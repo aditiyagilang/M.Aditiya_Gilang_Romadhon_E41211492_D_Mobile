@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:layout_gravity="bottom"
-    android:orientation="horizontal"
-    android:gravity="center">
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/firstfragment"
-
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="250dp"
-        android:layout_toEndOf="@+id/secundfragment"
-        android:backgroundTint="@color/custom"
-        android:text="Fisrst Fragment">
+        android:orientation="horizontal">
 
-    </Button>
-    <Button
-        android:id="@+id/secundfragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Secound Fragment"
-android:layout_marginRight="20dp"
-        android:backgroundTint="@color/custom"
-        >
+        <Button
+            android:id="@+id/firstfragment"
 
-    </Button>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="10dp"
+
+            android:backgroundTint="@color/custom"
+            android:text="Fisrst Fragment">
+
+        </Button>
+
+        <Button
+            android:id="@+id/secundfragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:backgroundTint="@color/custom"
+            android:text="Secound Fragment">
+
+        </Button>
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frame"

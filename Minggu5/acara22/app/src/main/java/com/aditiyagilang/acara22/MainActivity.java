@@ -1,14 +1,14 @@
-package com.aditiyagilang.acara18;
+package com.aditiyagilang.acara22;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class fragment1 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment1);
+        setContentView(R.layout.activity_main);
     }
 }

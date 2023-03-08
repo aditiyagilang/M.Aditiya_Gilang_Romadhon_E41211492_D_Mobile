@@ -33,7 +33,7 @@ btn1.setOnClickListener(new View.OnClickListener() {
 
 }
 private void load(Fragment fragment){
-    FragmentManager fragmentManager =    getSupportFragmentManager();
+    FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
     fragmentTransaction.replace(R.id.frame,fragment);
     fragmentTransaction.commit();

@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">acara23</string>
     <string name="kabar">Who Are You</string>
-    <string name="nama">Nama :</string>
+    <string name="nama">Nama</string>
+    <string name="nim">NIM</string>
     <string name="daftar">Daftar</string>
     <string name="trims">Terimakasih Sudah Mendaftar</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

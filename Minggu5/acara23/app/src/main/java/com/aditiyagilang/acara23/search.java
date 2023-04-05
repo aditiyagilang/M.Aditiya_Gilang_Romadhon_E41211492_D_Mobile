@@ -15,7 +15,7 @@ public class search extends AppCompatActivity {
 
     Button button;
     EditText editText;
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

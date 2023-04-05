@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -40,15 +41,24 @@ public class acara262 extends AppCompatActivity {
     }
 
     public void getPrivate(View view) {
-        File folder = getExternalCacheDir("AditiyaGilang");
+        File folder = new File(getExternalCacheDir(), "AditiyaGilang");
+        if (!folder.exists()) {
+            if (folder.mkdirs()) {
+                Log.d("TAG", "Folder created: " + folder.getAbsolutePath());
+            } else {
+                Log.e("TAG", "Failed to create folder: " + folder.getAbsolutePath());
+                return;
+            }
+        }
         File myfile = new File(folder, "myData2");
         String text = getdata(myfile);
         if (text != null){
             showText.setText(text);
-        }else {
+        } else {
             showText.setText("No Data");
         }
     }
+
 
 
 
@@ -56,9 +66,9 @@ public class acara262 extends AppCompatActivity {
         FileInputStream fileInputStream = null;
         try {
             fileInputStream = new FileInputStream(myfile);
-            int i = 1;
+            int i = -1;
             StringBuffer buffer = new StringBuffer();
-            while (i = fileInputStream.read() != -1) {
+            while ((i = fileInputStream.read()) != -1) {
                 buffer.append((char) i);
 
             }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
 
-    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,14 +15,24 @@
         android:theme="@style/Theme.ManajemendanSQLITE"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateBiodata"
+            android:exported="false"
+            android:label="Update Biodata"
+            />
+        <activity
+            android:name=".LihatBiodata"
+            android:exported="false"
+            android:label="Lihat Biodata"/>
+        <activity
+            android:name=".BuatBiodata"
+            android:exported="false"
+            android:label="Form Biodata Baru"
+            />
+        <activity
             android:name=".acara28"
-            android:exported="false" />
-        <activity
-            android:name=".acara262"
-            android:exported="false" />
-        <activity
-            android:name=".acara26"
-            android:exported="true" >
+            android:exported="true"
+            android:label="Biodata"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +40,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".acara262"
+            android:exported="false" />
+        <activity
+            android:name=".acara26"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
 
         </activity>
     </application>

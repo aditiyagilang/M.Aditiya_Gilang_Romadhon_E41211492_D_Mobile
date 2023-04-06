@@ -41,17 +41,9 @@ public class acara262 extends AppCompatActivity {
     }
 
     public void getPrivate(View view) {
-        File folder = new File(getExternalCacheDir(), "AditiyaGilang");
-        if (!folder.exists()) {
-            if (folder.mkdirs()) {
-                Log.d("TAG", "Folder created: " + folder.getAbsolutePath());
-            } else {
-                Log.e("TAG", "Failed to create folder: " + folder.getAbsolutePath());
-                return;
-            }
-        }
-        File myfile = new File(folder, "myData2");
-        String text = getdata(myfile);
+        File folder = getExternalFilesDir("Aditiya");
+        File myFile = new File(folder, "myData2.txt");
+        String text = getdata(myFile);
         if (text != null){
             showText.setText(text);
         } else {

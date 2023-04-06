@@ -77,6 +77,7 @@ public static acara28 ma;
                             case 2 :
                                 SQLiteDatabase db = dbcenter.getReadableDatabase();
                                 db.execSQL("delete from biodata where nama = '"+selection+"'");
+                                RefreshList();
                         }
                     }
                 });

@@ -33,7 +33,7 @@ EditText text1, text2, text3, text4, text5;
                     text2.getText().toString() + "','" +
                     text3.getText().toString() + "','" +
                     text4.getText().toString() + "','" +
-                    text5.getText().toString() + "','" +
+                    text5.getText().toString() +
                     "') ");
             Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_SHORT).show();
             acara28.ma.RefreshList();

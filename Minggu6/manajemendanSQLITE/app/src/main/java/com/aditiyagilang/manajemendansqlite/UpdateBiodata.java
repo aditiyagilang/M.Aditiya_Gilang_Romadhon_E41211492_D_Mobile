@@ -30,10 +30,10 @@ public class UpdateBiodata extends AppCompatActivity {
         if (cursor.getCount()>0){
             cursor.moveToPosition(0);
             text1.setText(cursor.getString(0).toString());
-            text2.setText(cursor.getString(0).toString());
-            text3.setText(cursor.getString(0).toString());
-            text4.setText(cursor.getString(0).toString());
-            text5.setText(cursor.getString(0).toString());
+            text2.setText(cursor.getString(1).toString());
+            text3.setText(cursor.getString(2).toString());
+            text4.setText(cursor.getString(3).toString());
+            text5.setText(cursor.getString(4).toString());
         }
         bt1 = (Button) findViewById(R.id.button1);
         btn2 = (Button) findViewById(R.id.button2);
@@ -41,11 +41,12 @@ public class UpdateBiodata extends AppCompatActivity {
         bt1.setOnClickListener(view -> {
             SQLiteDatabase db1 = dbHelper.getWritableDatabase();
             db1.execSQL("update biodata set nama = '"+
-                    text1.getText().toString() + "', tgl='"+
-                    text2.getText().toString() + "', jk='"+
-                    text3.getText().toString() + "', alamat='"+
-                    text4.getText().toString() + "', where no='"+
-                    text5.getText().toString() +
+
+                    text2.getText().toString() + "', tgl='"+
+                    text3.getText().toString() + "', jk='"+
+                    text4.getText().toString() + "', alamat='"+
+                    text5.getText().toString() + "'where no='"+
+                    text1.getText().toString() +
                     "'");
             Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_SHORT).show();
             acara28.ma.RefreshList();

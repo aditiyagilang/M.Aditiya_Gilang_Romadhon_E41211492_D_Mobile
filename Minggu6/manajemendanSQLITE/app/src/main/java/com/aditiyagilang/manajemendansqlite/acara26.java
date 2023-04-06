@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -31,7 +32,15 @@ private int STORAGE_PERMISSION_CODE = 23;
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
         String info = editText.getText().toString();
         File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File myfile = new File(folder, "myData1");
+        File myfile = new File(folder, "myData1.txt");
+        writeDate(myfile, info);
+        editText.setText("");
+    }
+
+    public void savePrivate(View view){
+        String info = editText.getText().toString();
+        File folder = getExternalFilesDir("Aditiya");
+        File myfile = new File(folder, "myData2.txt");
         writeDate(myfile, info);
         editText.setText("");
     }
@@ -41,6 +50,7 @@ private int STORAGE_PERMISSION_CODE = 23;
         try {
             System.out.println("TES");
             fileOutputStream = new FileOutputStream(myfile);
+            Toast.makeText(this,"Done"+ myfile.getAbsolutePath(),Toast.LENGTH_SHORT).show();
             fileOutputStream.write(data.getBytes());
         } catch (Exception e) {
             e.printStackTrace();

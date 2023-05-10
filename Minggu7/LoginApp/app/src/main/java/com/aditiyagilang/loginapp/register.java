@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class register extends AppCompatActivity {
+public class    register extends AppCompatActivity {
     EditText etUsername, etPassword;
     Button btnRegister, btnBack;
 

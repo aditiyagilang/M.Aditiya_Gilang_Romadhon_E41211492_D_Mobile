@@ -15,15 +15,20 @@
         app:srcCompat="@drawable/eclipse_success2" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:alpha="60"
+        android:id="@+id/daun"
+        android:layout_width="391dp"
+        android:layout_height="462dp"
+
+
+        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/eclipse_success1"
-        tools:layout_editor_absoluteX="-125dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.71"
+        app:srcCompat="@drawable/daunganja">
+
+
+    </ImageView>
 
     <ImageView
         android:id="@+id/imageView15"
@@ -39,7 +44,7 @@
         app:srcCompat="@drawable/petanimurka" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

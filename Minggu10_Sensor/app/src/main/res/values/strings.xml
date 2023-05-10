@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Minggu 10 Sensor</string>
+    <string name="label_brightness">Level : %1$.2f lux</string>
+    <string name="label_proximity">Objek : %1$.2f cm</string>
+</resources>

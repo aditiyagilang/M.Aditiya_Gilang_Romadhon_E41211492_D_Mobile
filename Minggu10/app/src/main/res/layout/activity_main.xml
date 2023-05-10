@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add your main activity layout components here -->
+
+    <Button
+        android:id="@+id/btnLaunchMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Maps Acara 33"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnLaunchMaps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Maps Acara 34"
+        android:layout_below="@id/btnLaunchMaps"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnLaunchMaps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Maps Acara 34_2"
+        android:layout_below="@id/btnLaunchMaps2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

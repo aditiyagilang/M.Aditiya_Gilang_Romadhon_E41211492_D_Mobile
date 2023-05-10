@@ -32,7 +32,7 @@ TextView text1, text2, text3, text4, text5;
             text2.setText(cursor.getString(1).toString());
             text3.setText(cursor.getString(2).toString());
             text4.setText(cursor.getString(3).toString());
-            text5.setText(cursor.getString(4).toString());
+            text5.setText(cursor.getString(4   ).toString());
         }
         btn = (Button) findViewById(R.id.button1);
         btn.setOnClickListener(view -> {
